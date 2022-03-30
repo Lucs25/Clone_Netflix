@@ -1,0 +1,108 @@
+:root{
+    --vermelho: rgba(255, 0, 0, 0.664);
+}
+
+*{
+    margin-left: 2px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(99, 62, 62, 0.459);  
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    /*margin-left: 10px; não utilizada*/
+    color: var(--vermelho);
+    font-family: "arial black", 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+
+header nav a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    margin-right: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* FILME */
+
+.filme_principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,70%)), url('/img/HouseOfCards.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .descricao {
+    /*margin-top: 0px; verificar*/
+    margin-bottom: 40px;
+    width: 40%;
+}
+
+.filme_principal .titulo {
+    /*margin-top: -15%;*/
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-left: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme_principal .container {
+    width: 70%;
+}
+
+.box_filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel_filmes {
+    margin-top: 5px;
+}
